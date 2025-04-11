@@ -7,7 +7,7 @@ export default function Navbar() {
       {/* Logo Section */}
       <div className="flex items-center min-w-0">
         <Image 
-          src="/logo.avif" 
+          src="/WhatBytes_logo.jpg" 
           alt="Logo"
           width={40}
           height={40}
