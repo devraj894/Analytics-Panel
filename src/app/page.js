@@ -90,11 +90,14 @@ export default function Home() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center sm:items-start sm:flex-col gap-4 text-center sm:text-left bg-gray-50 rounded-lg p-4"
+                  className="flex flex-col sm:flex-row items-center sm:items-start gap-3 bg-gray-50 rounded-lg p-4 text-center sm:text-left"
                 >
-                  <div className="rounded-full bg-gray-100 p-3 w-10 h-10 flex items-center justify-center">
-                    <img src={item.icon} alt={item.label} className="w-5 h-5" />
+                  {/* Image Section */}
+                  <div className="rounded-full bg-gray-100 p-3 w-12 h-12 flex items-center justify-center">
+                    <img src={item.icon} alt={item.label} className="w-6 h-6 object-contain" />
                   </div>
+
+                  {/* Value & Label */}
                   <div>
                     <p className="font-bold text-base">{item.value}</p>
                     <p className="text-gray-500 text-xs">{item.label}</p>
@@ -103,6 +106,7 @@ export default function Home() {
               ))}
             </div>
           </div>
+
 
           <ComparisonGraph userPercentile={percentile} />
         </div>
