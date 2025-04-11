@@ -24,13 +24,13 @@ export default function Sidebar({ isOpen, onClose }) {
       `}
       >
         {/* Close button (mobile only) */}
-        <div className="flex justify-end md:hidden">
+        <div className="flex justify-end md:hidden text-black">
           <button onClick={onClose}>
             <IoClose size={24} />
           </button>
         </div>
 
-        <ul className="space-y-2 text-sm mt-4 md:mt-0">
+        <ul className="space-y-4 text-sm mt-4 md:mt-7">
           <li className="flex items-center gap-3 font-bold text-gray-600 hover:bg-blue-50 px-3 py-2 rounded cursor-pointer">
             <RiBarChartFill />
             <span>Dashboard</span>

@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <Navbar />
 
           {/* Hamburger menu for mobile */}
-          <div className="md:hidden px-4 py-2 border-t border-gray-200 bg-white shadow">
+          <div className="md:hidden px-4 py-2 border-t border-gray-200 bg-white shadow text-black">
             <button onClick={() => setSidebarOpen(true)}>
               <HiMenuAlt3 size={24} />
             </button>
